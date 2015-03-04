@@ -5,29 +5,29 @@ angular.module('takeAction', ['ionic'])
   $scope.takeAction = function() {
     $ionicActionSheet.show({
       buttons: [
-        { text: 'Share <i class="icon ion-share">' },
-        { text: 'Edit <i class="icon ion-edit">' }
+        { text: '分享 <i class="icon ion-share">' },
+        { text: '编辑 <i class="icon ion-edit">' }
       ],
-      destructiveText: 'Delete <i class="icon ion-trash-b">',
-      titleText: 'Modify your album',
-      cancelText: 'Cancel',
+      destructiveText: '删除 <i class="icon ion-trash-b">',
+      titleText: '标题',
+      cancelText: '取消',
       cancel: function() {
-        $scope.message('Cancel');
+        $scope.message('取消');
         return true;
       },
       buttonClicked: function(index) {
-        $scope.message(index === 0 ? 'Share' : 'Edit');
+        $scope.message(index === 0 ? '分享' : '编辑');
         return true;
       },
       destructiveButtonClicked: function() {
-        $scope.message('Delete');
+        $scope.message('删除');
         return true;
       }
     });
   };
   $scope.message = function(msg) {
     $scope.messages.unshift({
-      text: 'User pressed ' + msg
+      text: '你按下的按钮是： ' + msg
     });
   };
 });
