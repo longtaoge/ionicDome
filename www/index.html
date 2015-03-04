@@ -48,7 +48,7 @@
                ng-class="{active: demo.id == $demo.id }"
                ng-repeat="demo in $demos | filter:demoFilter"
                ng-href="{{demo.href}}"
-               ng-bind="demo.component + ': ' + (demo.name | humanize)">
+               ng-bind=" (demo.name | humanize)">
                 <i class="icon icon-accessory ion-chevron-right"></i>
             </a>
         </div>

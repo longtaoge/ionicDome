@@ -3,7 +3,7 @@ var DEMOS = [
     "files": {
       "html": [
         {
-          "name": "simple",
+          "name": "复选框",
           "component": "ionCheckbox",
           "id": "ionCheckbox-simple",
           "fileType": ".html",
@@ -17,7 +17,7 @@ var DEMOS = [
       ],
       "js": [
         {
-          "name": "simple",
+          "name": "复选框",
           "component": "ionCheckbox",
           "id": "ionCheckbox-simple",
           "fileType": ".js",
@@ -31,7 +31,7 @@ var DEMOS = [
       ],
       "scenario.js": [
         {
-          "name": "simple",
+          "name": "复选框",
           "component": "ionCheckbox",
           "id": "ionCheckbox-simple",
           "fileType": ".scenario.js",
@@ -46,7 +46,7 @@ var DEMOS = [
       ]
     },
     "id": "ionCheckbox-simple",
-    "name": "simple",
+    "name": "复选框",
     "component": "ionCheckbox",
     "href": "/ionCheckbox/simple/"
   },
@@ -111,7 +111,7 @@ var DEMOS = [
       ]
     },
     "id": "collectionRepeat-contacts",
-    "name": "contacts",
+    "name": "联系人",
     "component": "collectionRepeat",
     "href": "/collectionRepeat/contacts/"
   },
@@ -162,7 +162,7 @@ var DEMOS = [
       ]
     },
     "id": "ionFooterBar-simple",
-    "name": "simple",
+    "name": "页脚",
     "component": "ionFooterBar",
     "href": "/ionFooterBar/simple/"
   },
@@ -213,7 +213,7 @@ var DEMOS = [
       ]
     },
     "id": "ionHeaderBar-simple",
-    "name": "simple",
+    "name": "页眉",
     "component": "ionHeaderBar",
     "href": "/ionHeaderBar/simple/"
   },
@@ -329,7 +329,7 @@ var DEMOS = [
       ]
     },
     "id": "ionList-animated",
-    "name": "animated",
+    "name": "动画",
     "component": "ionList",
     "href": "/ionList/animated/"
   },
@@ -380,7 +380,7 @@ var DEMOS = [
       ]
     },
     "id": "ionList-reorderDelete",
-    "name": "reorderDelete",
+    "name": "删除条目",
     "component": "ionList",
     "href": "/ionList/reorderDelete/"
   },
@@ -431,7 +431,7 @@ var DEMOS = [
       ]
     },
     "id": "ionRadio-chooseOne",
-    "name": "chooseOne",
+    "name": "单选",
     "component": "ionRadio",
     "href": "/ionRadio/chooseOne/"
   },
@@ -482,7 +482,7 @@ var DEMOS = [
       ]
     },
     "id": "ionRefresher-refreshList",
-    "name": "refreshList",
+    "name": "下拉刷新",
     "component": "ionRefresher",
     "href": "/ionRefresher/refreshList/"
   },
@@ -533,7 +533,7 @@ var DEMOS = [
       ]
     },
     "id": "ionSideMenus-navWithMenu",
-    "name": "navWithMenu",
+    "name": "菜单导航",
     "component": "ionSideMenus",
     "href": "/ionSideMenus/navWithMenu/"
   },
@@ -598,7 +598,7 @@ var DEMOS = [
       ]
     },
     "id": "ionSideMenus-simple",
-    "name": "simple",
+    "name": "滑动菜单",
     "component": "ionSideMenus",
     "href": "/ionSideMenus/simple/"
   },
@@ -663,7 +663,7 @@ var DEMOS = [
       ]
     },
     "id": "ionSlideBox-appIntro",
-    "name": "appIntro",
+    "name": "滑动页面",
     "component": "ionSlideBox",
     "href": "/ionSlideBox/appIntro/"
   },
@@ -714,7 +714,7 @@ var DEMOS = [
       ]
     },
     "id": "ionTabs-tabsAndNav",
-    "name": "tabsAndNav",
+    "name": "选项卡导航",
     "component": "ionTabs",
     "href": "/ionTabs/tabsAndNav/"
   },
@@ -765,7 +765,7 @@ var DEMOS = [
       ]
     },
     "id": "itemFloatingLabel-floatingLabel",
-    "name": "floatingLabel",
+    "name": "悬浮标签",
     "component": "itemFloatingLabel",
     "href": "/itemFloatingLabel/floatingLabel/"
   },
@@ -816,7 +816,7 @@ var DEMOS = [
       ]
     },
     "id": "ionToggle-simple",
-    "name": "simple",
+    "name": "滑动开关",
     "component": "ionToggle",
     "href": "/ionToggle/simple/"
   },
@@ -867,7 +867,7 @@ var DEMOS = [
       ]
     },
     "id": "$ionicActionSheet-takeAction",
-    "name": "takeAction",
+    "name": "活动表格",
     "component": "$ionicActionSheet",
     "href": "/$ionicActionSheet/takeAction/"
   },
@@ -918,7 +918,7 @@ var DEMOS = [
       ]
     },
     "id": "$ionicLoading-complete",
-    "name": "complete",
+    "name": "载入进度条",
     "component": "$ionicLoading",
     "href": "/$ionicLoading/complete/"
   },
@@ -969,7 +969,7 @@ var DEMOS = [
       ]
     },
     "id": "$ionicPopover-popover",
-    "name": "popover",
+    "name": "弹窗",
     "component": "$ionicPopover",
     "href": "/$ionicPopover/popover/"
   },
@@ -1020,7 +1020,7 @@ var DEMOS = [
       ]
     },
     "id": "$ionicPopup-popping",
-    "name": "popping",
+    "name": "对话框",
     "component": "$ionicPopup",
     "href": "/$ionicPopup/popping/"
   }
