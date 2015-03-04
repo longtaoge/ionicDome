@@ -4,7 +4,7 @@ angular.module('complete', ['ionic'])
   $scope.loadingOptions = {
     duration: 1000,
     delay: 0,
-    template: '<i class="icon ion-loading-c"></i>\n<br/>\nLoading...',
+    template: '<i class="icon ion-loading-c"></i>\n<br/>\n正在加载...',
     noBackdrop: false
   };
   $scope.showLoading = function() {

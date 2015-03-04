@@ -20,28 +20,28 @@
   
 <div ng-controller="LoadingCtrl">
   <ion-header-bar class="bar-positive">
-    <h1 class="title">Loading Demo</h1>
+    <h1 class="title">Loading  示例</h1>
     <a class="button" ng-click="showLoading()">
-      <i class="icon ion-more"></i> Load
+      <i class="icon ion-more"></i> 开始载入
     </a>
   </ion-header-bar>
   <ion-content>
     <div class="list">
       <label class="item item-input item-stacked-label">
-        <span class="input-label">Loading Duration (ms)</span>
+        <span class="input-label">载入耗时(单位为毫秒)</span>
         <input type="number" ng-model="loadingOptions.duration">
       </label>
       <label class="item item-input item-stacked-label">
-        <span class="input-label">Loading Delay (ms)</span>
+        <span class="input-label">载入延迟时间(单位为毫秒)</span>
         <input type="number" ng-model="loadingOptions.delay">
       </label>
       <label class="item item-input item-stacked-label">
-        <span class="input-label">Loading Template</span>
+        <span class="input-label">载入时用的模板</span>
         <textarea rows="3" ng-model="loadingOptions.template"></textarea>
       </label>
       <ion-toggle class="item item-toggle"
                   ng-model="loadingOptions.noBackdrop">
-        Hide Backdrop?
+       是否隐藏背景色
       </ion-toggle>
     </div>
   </ion-content>
