@@ -32,51 +32,10 @@
 
 </div>
 
-
-<script type="text/ng-template" id="ionic-demo-modal.html">
-    <div class="modal">
-        <div ng-include="'demo-list.html'">
-        </div>
-    </div>
-</script>
-
-<script type="text/ng-template" id="demo-list.html">
-    <ion-header-bar class="bar-light">
-        <a class="button" ng-click="$demoModal.hide()" ng-if="$demo">
-            Cancel
-        </a>
-
-        <h1 class="title">All Demos</h1>
-    </ion-header-bar>
-    <ion-content>
-
-        <div class="list">
-            <div class="item item-input-inset">
-                <label class="item-input-wrapper">
-                    <input type="text" placeholder="Filter Demos..." ng-model="demoFilter">
-                </label>
-                <button class="button button-small" ng-click="demoFilter = ''">
-                    Clear
-                </button>
-            </div>
-
-            <a class="item item-icon-right"
-               ng-class="{active: demo.id == $demo.id }"
-               ng-repeat="demo in $demos | filter:demoFilter"
-               ng-href="{{demo.href}}"
-               ng-bind="demo.component + ': ' + (demo.name | humanize)">
-                <i class="icon icon-accessory ion-chevron-right"></i>
-            </a>
-        </div>
-
-    </ion-content>
-</script>
-
 <style>
     body {
         margin-bottom: 44px;
     }
-
     .demo-content-pane {
         position: absolute;
         top: 0;
