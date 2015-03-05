@@ -4,7 +4,8 @@ angular.module('popover', ['ionic'])
 
 .controller('HeaderCtrl', function($scope, $ionicPopover) {
 
-        $ionicPopover.fromTemplateUrl('popover.html', {
+
+      $ionicPopover.fromTemplateUrl('popover.html', {
             scope: $scope
         }).then(function(popover) {
             $scope.popover = popover;
@@ -12,6 +13,7 @@ angular.module('popover', ['ionic'])
         $scope.openPopover = function($event) {
             $scope.popover.show($event);
         };
+
 
         $ionicPopover.fromTemplateUrl('popover2.html', {
             scope: $scope
