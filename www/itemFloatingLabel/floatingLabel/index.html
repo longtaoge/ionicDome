@@ -1,50 +1,45 @@
 <!doctype html>
 <html ng-app="floatingLabel" ng-controller="IonicDemoCtrl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <link rel="stylesheet" href="../../lib/ionic/css/ionic.min.css">
     <script src="../../lib/ionic/js/ionic.bundle.min.js"></script>
     <script src="../../pages-data.js"></script>
 
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="index.js"></script>
 
-  <script src="index.js"></script>
-
-<script src="index-ionic-demo-app.js"></script>
+    <script src="index-ionic-demo-app.js"></script>
 </head>
 <body>
 
 
-
 <div class="demo-content-pane">
-  
-  
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">
+            Text Input: Floating Label
+        </h1>
+    </ion-header-bar>
 
-<ion-header-bar class="bar-positive">
-  <h1 class="title">
-    Text Input: Floating Label
-  </h1>
-</ion-header-bar>
+    <ion-content ng-controller="AppCtrl">
 
-<ion-content ng-controller="AppCtrl">
+        <div class="list">
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Name</span>
+                <input type="text" placeholder="Name">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Profession</span>
+                <input type="text" placeholder="Profession">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Favorite Song</span>
+                <textarea placeholder="Favorite Song" ng-model="favSong"></textarea>
+            </label>
+        </div>
+    </ion-content>
 
-  <div class="list">
-    <label class="item item-input item-floating-label">
-      <span class="input-label">Name</span>
-      <input type="text" placeholder="Name">
-    </label>
-    <label class="item item-input item-floating-label">
-      <span class="input-label">Profession</span>
-      <input type="text" placeholder="Profession">
-    </label>
-    <label class="item item-input item-floating-label">
-      <span class="input-label">Favorite Song</span>
-      <textarea placeholder="Favorite Song" ng-model="favSong"></textarea>
-    </label>
-  </div>
-
-</ion-content>
-  
 </div>
 <div class="bar bar-footer bar-light demo-footer">
 

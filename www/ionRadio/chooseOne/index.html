@@ -1,39 +1,38 @@
 <!doctype html>
 <html ng-app="chooseOne" ng-controller="IonicDemoCtrl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <link rel="stylesheet" href="../../lib/ionic/css/ionic.min.css">
     <script src="../../lib/ionic/js/ionic.bundle.min.js"></script>
     <script src="../../pages-data.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="index.js"></script>
 
-  <script src="index.js"></script>
-
-<script src="index-ionic-demo-app.js"></script>
+    <script src="index-ionic-demo-app.js"></script>
 </head>
 <body>
 
 
-
 <div class="demo-content-pane">
-  
-  
-<ion-header-bar class="bar-positive">
-  <h1 class="title">Radios</h1>
-</ion-header-bar>
-<ion-content ng-controller="ChooseOneCtrl">
-  <h1>
-    Your Choice: <span class="assertive">{{choice}}</span> 
-  </h1>
-  <ion-radio ng-model="choice" value="one">One</ion-radio>
-  <ion-radio ng-model="choice" value="two">Two</ion-radio>
-  <ion-radio ng-model="choice" ng-value="'three'">Three</ion-radio>
-  <ion-radio ng-model="choice" ng-value="'four'">Four</ion-radio>
-  <ion-radio ng-model="choice" value="five">Five</ion-radio>
-</ion-content>
-  
+
+
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">Radios</h1>
+    </ion-header-bar>
+    <ion-content ng-controller="ChooseOneCtrl">
+        <h1>
+            Your Choice: <span class="assertive">{{choice}}</span>
+        </h1>
+        <ion-radio ng-model="choice" value="one">One</ion-radio>
+        <ion-radio ng-model="choice" value="two">Two</ion-radio>
+        <ion-radio ng-model="choice" ng-value="'three'">Three</ion-radio>
+        <ion-radio ng-model="choice" ng-value="'four'">Four</ion-radio>
+        <ion-radio ng-model="choice" value="five">Five</ion-radio>
+    </ion-content>
+
 </div>
-<div class="bar bar-footer bar-light demo-footer" >
+<div class="bar bar-footer bar-light demo-footer">
 </div>
 
 </body>

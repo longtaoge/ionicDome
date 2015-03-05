@@ -1,54 +1,53 @@
 <!doctype html>
 <html ng-app="complete" ng-controller="IonicDemoCtrl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <link rel="stylesheet" href="../../lib/ionic/css/ionic.min.css">
     <script src="../../lib/ionic/js/ionic.bundle.min.js"></script>
     <script src="../../pages-data.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="index.js"></script>
 
-  <script src="index.js"></script>
-
-<script src="index-ionic-demo-app.js"></script>
+    <script src="index-ionic-demo-app.js"></script>
 </head>
 <body>
 
 
-
 <div class="demo-content-pane">
-  
-  
-<div ng-controller="LoadingCtrl">
-  <ion-header-bar class="bar-positive">
-    <h1 class="title">Loading  示例</h1>
-    <a class="button" ng-click="showLoading()">
-      <i class="icon ion-more"></i> 开始载入
-    </a>
-  </ion-header-bar>
-  <ion-content>
-    <div class="list">
-      <label class="item item-input item-stacked-label">
-        <span class="input-label">载入耗时(单位为毫秒)</span>
-        <input type="number" ng-model="loadingOptions.duration">
-      </label>
-      <label class="item item-input item-stacked-label">
-        <span class="input-label">载入延迟时间(单位为毫秒)</span>
-        <input type="number" ng-model="loadingOptions.delay">
-      </label>
-      <label class="item item-input item-stacked-label">
-        <span class="input-label">载入时用的模板</span>
-        <textarea rows="3" ng-model="loadingOptions.template"></textarea>
-      </label>
-      <ion-toggle class="item item-toggle"
-                  ng-model="loadingOptions.noBackdrop">
-       是否隐藏背景色
-      </ion-toggle>
+
+
+    <div ng-controller="LoadingCtrl">
+        <ion-header-bar class="bar-positive">
+            <h1 class="title">Loading 示例</h1>
+            <a class="button" ng-click="showLoading()">
+                <i class="icon ion-more"></i> 开始载入
+            </a>
+        </ion-header-bar>
+        <ion-content>
+            <div class="list">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">载入耗时(单位为毫秒)</span>
+                    <input type="number" ng-model="loadingOptions.duration">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">载入延迟时间(单位为毫秒)</span>
+                    <input type="number" ng-model="loadingOptions.delay">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">载入时用的模板</span>
+                    <textarea rows="3" ng-model="loadingOptions.template"></textarea>
+                </label>
+                <ion-toggle class="item item-toggle"
+                            ng-model="loadingOptions.noBackdrop">
+                    是否隐藏背景色
+                </ion-toggle>
+            </div>
+        </ion-content>
     </div>
-  </ion-content>
+
 </div>
-  
-</div>
-<div class="bar bar-footer bar-light demo-footer" >
+<div class="bar bar-footer bar-light demo-footer">
 
 </div>
 
