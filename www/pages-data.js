@@ -264,7 +264,7 @@ var DEMOS = [
       ]
     },
     "id": "ionInfiniteScroll-forever",
-    "name": "forever",
+    "name": "加载更多",
     "component": "ionInfiniteScroll",
     "href": "/ionInfiniteScroll/forever/"
   },
