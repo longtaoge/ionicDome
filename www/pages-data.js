@@ -116,23 +116,19 @@ var DEMOS = [
         "href": "/$ionicLoading/complete/"
     },
     {
-
         "id": "collectionRepeat-contacts",
         "name": "联系人",
         "component": "collectionRepeat",
         "href": "/collectionRepeat/contacts/"
     },
 
-
     {
-
         "id": "ionList-reorderDelete",
         "name": "删除条目",
         "component": "ionList",
         "href": "/ionList/reorderDelete/"
     },
     {
-
         "id": "ionList-animated",
         "name": "动画（Chrome下测试）",
         "component": "ionList",
