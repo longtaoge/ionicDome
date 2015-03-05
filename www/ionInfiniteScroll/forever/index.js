@@ -8,11 +8,15 @@ angular.module('forever', ['ionic'])
 
   //Load more after 1 second delay
   $scope.loadMoreItems = function() {
+
      var i = $scope.items.length;
-     var j = $scope.items.length + 5;
+     var j = $scope.items.length +3;
      for (; i < j; i++) {
        $scope.items.push('Item ' + i);
      }
-     $scope.$broadcast('scroll.infiniteScrollComplete');
+      $timeout(function () {//设置加载超时时间
+          $scope.$broadcast('scroll.infiniteScrollComplete');
+      }, 1000);
+
   };
 });
