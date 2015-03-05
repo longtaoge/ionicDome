@@ -1027,7 +1027,7 @@ var DEMOS = [
             ]
         },
         "id": "ionList-animated",
-        "name": "动画",
+        "name": "动画（Chrome下测试）",
         "component": "ionList",
         "href": "/ionList/animated/"
     },
