@@ -96,7 +96,7 @@ angular.module('popping', ['ionic'])
                 title: '密码确认',
                 subTitle: '请输入您的解锁密码',
                 inputType: 'password',
-                inputPlaceholder: '请输入您的密码',
+                inputPlaceholder: '请输入您的密码'
 
 
             }).then(function (res) {

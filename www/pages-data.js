@@ -80,7 +80,7 @@ var DEMOS = [
     {
 
         "id": "$ionicPopover-popover",
-        "name": "弹窗",
+        "name": "下拉弹窗",
         "component": "$ionicPopover",
         "href": "/$ionicPopover/popover/"
     },
