@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Ionic Seed App</title>
+      <!-- ionic css -->
+      <link href="../../ionic/css/ionic.css" rel="stylesheet">
+      <!-- your app's css -->
+      <link href="css/app.css" rel="stylesheet">
+      <link href="css/ionic.contrib.frostedGlass.css" rel="stylesheet">
+      <!-- angularjs scripts -->
+      <script src="../../ionic/js/ionic.js"></script>
+      <script src="../../ionic/js/angular/angular.js"></script>
+      <script src="../../ionic/js/angular/angular-animate.js"></script>
+      <script src="../../ionic/js/angular/angular-sanitize.js"></script>
+      <script src="../../ionic/js/angular-ui/angular-ui-router.js"></script>
+      <script src="js/ionic-angular.js"></script>
+      <!-- your app's script -->
+      <script src="js/app.js"></script>
+      <script src="js/ionic.contrib.frostedGlass.js"></script>
+
+  </head>
+
+  <!-- 
+    'starter' is the name of this angular module (js/app.js)
+  -->
+  <body ng-app="starter" animation="slide-left-right-ios7">
+
+    <pane ng-controller="PageCtrl">
+      <ion-header-bar frosted-bar title="'Blurred...man!'" type="bar-frosted"></ion-header-bar>
+      <ion-content has-header="true" has-footer="true" padding="true" start-y="120">
+        <ol class="messages">
+					<li ng-repeat="message in messages" ion-bind-html-unsafe="message.content">
+					</li>
+				</ol>
+      </ion-content>
+      <footer class="bar bar-footer bar-frosted">
+        <button class="button button-clear button-positive" ng-click="add()">Add Message</button>
+      </footer>
+    </pane>
+  </body>
+</html>
