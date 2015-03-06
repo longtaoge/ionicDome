@@ -25,37 +25,54 @@
         <h1 class="title">All Demos 演示列表</h1>
     </ion-header-bar>
     <ion-content>
-    <div class="padding">
+        <div class="padding">
 
 
+            <div class="list">
+                <div class="item item-input-inset">
+                    <label class="item-input-wrapper">
+                        <input type="text" placeholder="筛选..." ng-model="demoFilter">
+                    </label>
+                    <button class="button button-small" ng-click="demoFilter = ''">
+                        重置
+                    </button>
+                </div>
 
-        <div class="list">
-            <div class="item item-input-inset">
-                <label class="item-input-wrapper">
-                    <input type="text" placeholder="筛选..." ng-model="demoFilter">
-                </label>
-                <button class="button button-small" ng-click="demoFilter = ''">
-                    重置
-                </button>
+                <a class="item item-icon-right"
+                   ng-class="{active: demo.id == $demo.id }"
+                   ng-repeat="demo in $demos | filter:demoFilter"
+                   ng-href="{{demo.href}}">
+                    {{demo.name | humanize }}
+                    <i class="icon icon-accessory ion-chevron-right"></i>
+                </a>
             </div>
-
-            <a class="item item-icon-right"
-               ng-class="{active: demo.id == $demo.id }"
-               ng-repeat="demo in $demos | filter:demoFilter"
-               ng-href="{{demo.href}}"
-               ng-bind=" (demo.name | humanize)">
-                <i class="icon icon-accessory ion-chevron-right"></i>
-            </a>
         </div>
-    </div>
+
 
         <button class="button button-block button-balanced">
             扩展示例
         </button>
         <div class="padding">
             <a class="item item-icon-right"
-               ng-href="/swipecards/swipecards/"
-                    >Swipecards
+               ng-href="/other/swipecards/swipecards/"
+                    >滑动卡片
+                <i class="icon icon-accessory ion-chevron-right"></i>
+            </a>
+
+            <a class="item item-icon-right"
+               ng-href="/other/google-maps/"
+                    >谷歌地图
+                <i class="icon icon-accessory ion-chevron-right"></i>
+            </a>
+            <a class="item item-icon-right"
+               ng-href="/other/loading-bar/"
+                    >加载提示条
+                <i class="icon icon-accessory ion-chevron-right"></i>
+            </a>
+
+            <a class="item item-icon-right"
+               ng-href="/other/header-shrink/"
+                    >向上滑动隐藏导航条
                 <i class="icon icon-accessory ion-chevron-right"></i>
             </a>
 
